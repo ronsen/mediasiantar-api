@@ -1,4 +1,6 @@
 import express from 'express';
+import path from 'path';
+
 import { antarasumut } from './lib/antarasumut.js';
 import { armadanews } from './lib/armadanews.js';
 import { bentengsiantar } from './lib/bentengsiantar.js';
@@ -23,7 +25,7 @@ const port = process.env.PORT || 8080;
 app.listen(port);
 
 app.get('/', (req, res) => {
-    res.send('Kumpulan API artikel berita seputar kota Pematang Siantar.');
+    res.sendFile(path.resolve('.', 'index.html'));
 });
 
 app.get('/antarasumut', async (req, res) => {
