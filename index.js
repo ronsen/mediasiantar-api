@@ -19,7 +19,8 @@ import { sib } from './lib/sib.js';
 import { tribunmedan } from './lib/tribunmedan.js';
 
 const app = express();
-app.listen(80)
+const port = process.env.PORT || 8080;
+app.listen(port);
 
 app.get('/', (req, res) => {
     res.send('Kumpulan API artikel berita seputar kota Pematang Siantar.');
