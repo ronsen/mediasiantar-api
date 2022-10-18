@@ -4,50 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info Siantar API</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Media Siantar API</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <header style="display: inline-flex; align-items: center; gap: 6px; font-size: 1.3em; font-weight: bold;">
-        <a href="/">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-            </svg>
-        </a>
+<body class="bg-dark text-light">
+    <div class="container my-3">
+        <header class="mb-3 gap-2 fs-2 border-bottom">
+            <a href="/" class="link-light text-decoration-none">Media Siantar API</a>
+        </header>
 
-        Info Siantar API
-    </header>
+        <p>API media kota Pematang Siantar.</p>
 
-    <hr>
+        <p>Endpoints:</p>
 
-    <p>Artikel berita terkini seputar kota Pematang Siantar.</p>
+        <ul>
+            <li><a href="/armadanews" class="link-light">/armadanews</a></li>
+            <li><a href="/bentengsiantar" class="link-light">/bentengsiantar</a></li>
+            <li><a href="/bidiknewstoday" class="link-light">/bidiknewstoday</a></li>
+            <li><a href="/dekrit" class="link-light">/dekrit</a></li>
+            <li><a href="/harianmetro" class="link-light">/harianmetro</a></li>
+            <li><a href="/hetanews" class="link-light">/hetanews</a></li>
+            <li><a href="/idntimes" class="link-light">/idntimes</a></li>
+            <li><a href="/jurnalx" class="link-light">/jurnalx</a></li>
+            <li><a href="/kliktodaynews" class="link-light">/kliktodaynews</a></li>
+            <li><a href="/lintangnews" class="link-light">/lintangnews</a></li>
+            <li><a href="/lintaspublik" class="link-light">/lintaspublik</a></li>
+            <li><a href="/mistar" class="link-light">/mistar</a></li>
+            <li><a href="/newscorner" class="link-light">/newscorner</a></li>
+            <li><a href="/rmolsumut" class="link-light">/rmolsumut</a></li>
+            <li><a href="/sbnpro" class="link-light">/sbnpro</a></li>
+            <li><a href="/sib" class="link-light">/sib</a></li>
+            <li><a href="/tribunmedan" class="link-light">/tribunmedan</a></li>
+        </ul>
 
-    <p>Endpoints:</p>
+        <p>Response:</p>
 
-    <ul>
-        <li><a href="/armadanews">/armadanews</a></li>
-        <li><a href="/bentengsiantar">/bentengsiantar</a></li>
-        <li><a href="/bidiknewstoday">/bidiknewstoday</a></li>
-        <li><a href="/dekrit">/dekrit</a></li>
-        <li><a href="/harianmetro">/harianmetro</a></li>
-        <li><a href="/hetanews">/hetanews</a></li>
-        <li><a href="/idntimes">/idntimes</a></li>
-        <li><a href="/jurnalx">/jurnalx</a></li>
-        <li><a href="/kliktodaynews">/kliktodaynews</a></li>
-        <li><a href="/lintangnews">/lintangnews</a></li>
-        <li><a href="/lintaspublik">/lintaspublik</a></li>
-        <li><a href="/mistar">/mistar</a></li>
-        <li><a href="/newscorner">/newscorner</a></li>
-        <li><a href="/rmolsumut">/rmolsumut</a></li>
-        <li><a href="/sbnpro">/sbnpro</a></li>
-        <li><a href="/sib">/sib</a></li>
-        <li><a href="/tribunmedan">/tribunmedan</a></li>
-    </ul>
-
-    <p>Response:</p>
-
-    <pre style="overflow-x: scroll; overflow-y: auto; height: 300px;">
+        <pre style="overflow-x: scroll; overflow-y: auto; height: 300px;">
 {
     "url": "https://www.hetanews.com/category/pematangsiantar",
     "articles": [
@@ -98,12 +90,11 @@
         }
     ]
 }
-    </pre>
+        </pre>
 
-    <hr>
-
-    <footer style="text-align: center;">
-        <a href="https://github.com/ronsen/infosiantar">Github</a>
-    </footer>
+        <footer class="text-center">
+            <a href="https://github.com/ronsen/infosiantar" class="link-light">Github</a>
+        </footer>
+    </div>
 </body>
 </html>
