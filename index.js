@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import path from 'path';
 
 import { antarasumut } from './lib/antarasumut.js';
@@ -22,6 +23,7 @@ import { tribunmedan } from './lib/tribunmedan.js';
 
 const app = express();
 const port = process.env.PORT || 8080;
+app.use(cors());
 app.listen(port);
 
 app.get('/', (req, res) => {
