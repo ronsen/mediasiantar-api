@@ -7,6 +7,7 @@ import { armadanews } from './lib/armadanews.js';
 import { bentengsiantar } from './lib/bentengsiantar.js';
 import { bidiknewstoday } from './lib/bidiknewstoday.js';
 import { dekrit } from './lib/dekrit.js';
+import { detik } from './lib/detik.js';
 import { harianmetro } from './lib/harianmetro.js';
 import { hetanews } from './lib/hetanews.js';
 import { idntimes } from './lib/idntimes.js';
@@ -52,6 +53,11 @@ app.get('/bidiknewstoday', async (req, res) => {
 
 app.get('/dekrit', async (req, res) => {
     let data = await dekrit();
+    res.send(data);
+});
+
+app.get('/detik', async (req, res) => {
+    let data = await detik();
     res.send(data);
 });
 
