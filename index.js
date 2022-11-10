@@ -25,7 +25,6 @@ import { tribunmedan } from './lib/tribunmedan.js';
 const app = express();
 const port = process.env.PORT || 8080;
 app.use(cors());
-app.listen(port);
 
 app.get('/', (req, res) => {
     res.sendFile(path.resolve('.', 'index.html'));
@@ -124,4 +123,8 @@ app.get('/sib', async (req, res) => {
 app.get('/tribunmedan', async (req, res) => {
     let data = await tribunmedan();
     res.send(data);
+});
+
+app.listen(port, () => {
+    console.info(`🚀 Server runs at port ${port}`);
 });
